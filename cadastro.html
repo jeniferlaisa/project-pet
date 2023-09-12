@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Usuário</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Inclua o link para seu arquivo CSS aqui -->
+</head>
+<body class="page-cadastro">
+    <!-- Cabeçalho (pode ser o mesmo usado na página principal) -->
+    <header>
+    <div class="main-header">
+        <div class="header-logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+        <div class="header-search">
+            <input type="text" placeholder="Busca">
+        </div>
+        <div class="header-buttons">
+            <a href="verify.html">
+                <button class="button">Minha Conta</button>
+            </a>
+            <button class="button">Carrinho</button>
+        </div>
+    </div>
+        <nav class="header-nav">
+            <ul>
+                <li><a href="index.html">Página Inicial</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+                <li><a href="login.html">Login</a></li>
+                <!-- Adicione outros links de navegação conforme necessário -->
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Formulário de Cadastro -->
+    <main>
+        <div class="form-container">
+            <h2 class="form-title">Cadastro de Novo Cliente</h2>
+            <form action="processar_cadastro.php" method="POST"> <!-- Lembre-se de ajustar o atributo "action" ao seu backend -->
+                <div class="form-group">
+                    <label class="form-label" for="nome">Nome Completo:</label>
+                    <input class="form-input" type="text" id="nome" name="nome" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="dataNascimento">Data de Nascimento:</label>
+                    <input class="form-input" type="date" id="dataNascimento" name="dataNascimento" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="cpf">CPF:</label>
+                    <input class="form-input" type="text" id="cpf" name="cpf" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="celular">Telefone Celular:</label>
+                    <input class="form-input" type="tel" id="celular" name="celular" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="email">E-mail:</label>
+                    <input class="form-input" type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="confirmaEmail">Confirmação de E-mail:</label>
+                    <input class="form-input" type="email" id="confirmaEmail" name="confirmaEmail" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="senha">Senha:</label>
+                    <input class="form-input" type="password" id="senha" name="senha" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="confirmaSenha">Confirmação de Senha:</label>
+                    <input class="form-input" type="password" id="confirmaSenha" name="confirmaSenha" required>
+                </div>
+                <button class="form-button" type="submit">Cadastrar</button>
+            </form>
+        </div>
+    </main>
+
+    <!-- Rodapé (pode ser o mesmo usado na página principal) -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-contact">
+                    <p>Entre em contato:</p>
+                    <p>Email: contato@servicosparapets.com</p>
+                    <p>Telefone: (16) 99277-6554</p>
+                    <p>Endereço: Rua Das Pedras, 2385 - Vila Santa Cruz, Franca/SP
+                    </p>
+                    <br/>
+                    <br/>
+                    <p>Autor do site: Jenifer Laísa Moreira Lemes ® </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
